@@ -1,5 +1,15 @@
 $(function(){
 
+
+   /* Menu nav toggle */
+    $("#nav_toggle").on("click", function(event) {
+        event.preventDefault();
+
+        $(this).toggleClass("active");
+        $("#nav").toggleClass("active");
+    });
+
+
     $('.projects__slider').slick({
         arrows: false,
         dots: false,
