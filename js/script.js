@@ -6,15 +6,18 @@ $(function(){
         autoplay: true,
 		slidesToShow: 4,
         slidesToScroll: 1,
-    //      centerMode: true,
-    //    variableWidth: true,
+        centerMode: true,
+//       variableWidth: true,
     //     infinite: true,
 
      responsive: [
             {
-              breakpoint: 991,
+              breakpoint: 1000,
               settings: {
               slidesToShow: 2,
+                // variableWidth: true,
+                 centerMode: true,
+                 //infinite: true,
               }
             }
           ]

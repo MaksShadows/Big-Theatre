@@ -667,6 +667,129 @@ a {
 	font-size: 12px;
 }
 
+
+@media (max-width: 1200px) {
+	.container {
+		width: 770px;
+	}
+
+	.header__top-line-inner {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 50px;
+	}
+
+	.header__phone {
+		padding-top: 50px;
+		margin-left: -115px;
+	}
+
+	.menu__list-item {
+		margin-right: 30px;
+	}
+
+	.about__info-img-theatre {
+		display: none;
+	}
+
+	.rating>.container {
+		width: 100%;
+	}
+
+	.contacts__box {
+		flex-direction: column-reverse;
+	}
+
+	.contacts__form-textarea {
+		width: 260px;
+	}
+
+	.contacts__info {
+		padding-right: 0;
+		padding-top: 80px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contacts-adresses {
+		text-align: right;
+	}
+}
+
+@media (max-width: 1100px) {
+	.container {
+		width: 770px;
+	}
+
+	.main-slider {
+		display: none;
+	}
+
+	.inrto__inner {
+		justify-content: center;
+	}
+
+	.header__top-line-inner {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 50px;
+	}
+
+	.menu__list-item {
+		margin-right: 30px;
+	}
+
+	.about__info-img-theatre {
+		display: none;
+	}
+
+	.about__inner {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.rating>.container {
+		width: 100%;
+	}
+
+	.contacts__box {
+		flex-direction: column-reverse;
+	}
+
+	.contacts__form-textarea {
+		width: 260px;
+	}
+
+	.contacts__info {
+		padding-right: 0;
+		padding-top: 80px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contacts-adresses {
+		text-align: right;
+	}
+}
+
+@media (max-width: 1070px) {
+	.container {
+		width: 770px;
+	}
+
+	.header__top-line-inner {
+		margin-right: -160px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		width: 700px;
+	}
+}
+
 @media (max-width: 991px) {
 	.header {
 		height: 800px;
@@ -683,6 +806,7 @@ a {
 
 	.header__top-line-inner {
 		flex-direction: row;
+		margin: 0;
 	}
 
 	.fixed-panel {
@@ -779,6 +903,18 @@ a {
 
 	.menu__item-button:hover {
 		background-color: #0f0f0f;
+	}
+
+	.projects-slider,
+	.slick-initialized {
+		cursor: pointer;
+		max-width: 690px;
+		margin-left: 150px;
+	}
+
+	.column {
+		margin-left: 30px;
+
 	}
 
 	.rating>.container {
