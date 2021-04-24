@@ -43,4 +43,73 @@ $(function () {
     slidesToShow: 1,
 
   });
+  $('.partners__slider-items').slick({
+    arrows: false,
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [{
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          // variableWidth: true,
+          // infinite: true,
+
+        }
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 3,
+          // variableWidth: true,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 3,
+          // variableWidth: true,
+        }
+      },
+      {
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+
+        }
+      },
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 416,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 415,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        }
+      },
+
+    ]
+
+  });
 });
