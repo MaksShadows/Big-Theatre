@@ -18,14 +18,23 @@ $(function () {
     //     infinite: true,
 
     responsive: [{
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 2,
-        // variableWidth: true,
-        centerMode: true,
-        //infinite: true,
-      }
-    }]
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          // variableWidth: true,
+          centerMode: true,
+          //infinite: true,
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+
+        }
+      },
+    ]
   });
 
   $('.main-slider').slick({
