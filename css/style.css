@@ -727,7 +727,8 @@ a {
 		width: 770px;
 	}
 
-	.main-slider {
+	.main-slider,
+	intro__right{
 		display: none;
 	}
 
