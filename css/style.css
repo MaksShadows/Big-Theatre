@@ -186,13 +186,10 @@ a {
 	transition: background 0.3s linear;
 }
 
-.intro__right {
-	max-width: 800px;
-}
 
 .main-slider {
 	overflow: hidden;
-	margin-left: 430px;
+	margin-left: 410px;
 }
 
 .main-slider .slick-arrow {
@@ -1018,6 +1015,7 @@ a {
 		font-size: 22px;
 	}
 
+
 	.rating__box-year {
 		margin-bottom: 20px;
 	}
@@ -1051,9 +1049,9 @@ a {
 		flex-wrap: wrap;
 	}
 
-	.colm-2 {
+	.colm {
 		display: flex;
-		gap: 135px;
+		gap: 110px;
 	}
 
 	.projects__title {
@@ -1099,6 +1097,22 @@ a {
 
 	.partners__title {
 		margin-bottom: 20px;
+	}
+
+	.colm-2 {
+		display: flex;
+	}
+
+	.colm {
+		display: flex;
+		gap: 95px;
+		/* flex-direction: column */
+	}
+
+	.about__text {
+		max-width: 400px;
+		text-align: center;
+		margin-left: 40px;
 	}
 
 }
@@ -1152,6 +1166,15 @@ a {
 	.slick-initialized {
 		display: flex;
 		margin-left: 115px;
+	}
+
+	.rating__box {
+		flex-direction: column;
+		background: none;
+	}
+
+	.rating__box-descriprion {
+		font-size: 14px;
 	}
 }
 
@@ -1240,9 +1263,6 @@ a {
 		max-width: 400px;
 	}
 
-	.rating>.container {
-		width: 100%;
-	}
 
 	.rating__box-left-column {
 		padding-right: 25px;
@@ -1354,6 +1374,10 @@ a {
 
 	}
 
+	.rating__box-descriprion {
+		font-size: 12px;
+	}
+
 	.projects__title {
 		font-size: 40px;
 	}
@@ -1423,8 +1447,22 @@ a {
 		font-size: 47px;
 	}
 
+	.intro__left {
+		max-width: 200px;
+	}
+
 	.about__row {
 		max-width: 260px;
+	}
+
+	.small {
+		display: none;
+	}
+
+	.colm {
+		display: flex;
+		gap: 10px;
+		flex-direction: column;
 	}
 
 	.colm-2 {
@@ -1444,11 +1482,15 @@ a {
 		align-items: center;
 		flex-wrap: wrap;
 		text-align: center;
+	}
 
+	.partners {
+		padding: 0;
 	}
 
 	.projects__title {
-		font-size: 25px;
+		font-size: 20px;
+		padding-bottom: 20px;
 	}
 
 	.contacts__form-textarea {
