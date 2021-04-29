@@ -13,7 +13,7 @@ $(function () {
     autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    centerMode: true,
+
     //       variableWidth: true,
     //     infinite: true,
 
@@ -66,9 +66,17 @@ $(function () {
         }
       },
       {
+        breakpoint: 660,
+        settings: {
+          slidesToShow: 2,
+          // variableWidth: true,
+          infinite: true,
+        }
+      },
+      {
         breakpoint: 580,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           // variableWidth: true,
         }
       },
