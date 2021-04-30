@@ -49,11 +49,20 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 1025,
+        breakpoint: 1450,
         settings: {
           slidesToShow: 3,
           // variableWidth: true,
           // infinite: true,
+
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          // variableWidth: true,
+          infinite: true,
 
         }
       },
@@ -66,7 +75,7 @@ $(function () {
         }
       },
       {
-        breakpoint: 660,
+        breakpoint: 690,
         settings: {
           slidesToShow: 2,
           // variableWidth: true,

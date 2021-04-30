@@ -20,8 +20,9 @@ a {
 }
 
 .container {
-	max-width: 1120px;
+	max-width: 1100px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 /* === FIXED PANEL ===*/
@@ -280,7 +281,8 @@ a {
 /* === ABOUT ===*/
 
 .about__inner {
-	padding: 150px 0;
+	display: flex;
+	padding-bottom: 150px;
 }
 
 .about__title {
@@ -293,6 +295,7 @@ a {
 	text-transform: uppercase;
 	color: #fff;
 	margin: 0;
+	padding-top: 150px;
 	padding-bottom: 100px;
 }
 
@@ -300,9 +303,17 @@ a {
 	color: #D1A954;
 }
 
+.about-theater {
+	max-width: 445px;
+
+}
+
 .about__title-colm {
+	font-family: "Open Sans Condensed", sans-serif;
+	font-style: normal;
 	font-weight: 700;
 	font-size: 21px;
+	line-height: 29px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #fff;
@@ -311,21 +322,32 @@ a {
 }
 
 .about__text {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	font-size: 14px;
-	line-height: 21px;
-	max-width: 445px;
+	line-height: 150%;
 	color: #fff;
 }
 
-.about__row {
-	display: flex;
-	justify-content: space-between;
+.about-theater-digits {
+	max-width: 255px;
+	margin: 0 60px 0 30px;
 }
 
-.about__icon {
-	width: 80px;
-	height: 80px;
+.about-theater-title {
+	font-family: "Open Sans Condensed", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 29px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #fff;
+	padding-bottom: 40px;
+	margin: 0;
 }
+
 
 .about__description {
 	font-weight: bold;
@@ -339,8 +361,8 @@ a {
 	color: #D1A954;
 }
 
-.about__theatre-info-img {
-	padding-bottom: 15px;
+.about__img {
+	width: 350px;
 }
 
 /* ==== PROJECTS  ====*/
@@ -683,9 +705,13 @@ a {
 	font-size: 12px;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1450px) {
 	.container {
-		width: 770px;
+		max-width: 770px;
+	}
+
+	.about__img {
+		display: none;
 	}
 
 	.header__top-line-inner {
@@ -697,6 +723,13 @@ a {
 	.header__phone {
 		padding-top: 50px;
 		margin-left: -115px;
+	}
+
+	.partners__slider-items,
+	.slick-initialized {
+		overflow: hidden;
+		cursor: pointer;
+		margin-left: 0;
 	}
 
 	.menu__list-item {
@@ -733,7 +766,7 @@ a {
 
 @media (max-width: 1200px) {
 	.container {
-		width: 770px;
+		max-width: 770px;
 	}
 
 	.header__top-line-inner {
@@ -781,11 +814,10 @@ a {
 
 @media (max-width: 1100px) {
 	.container {
-		width: 770px;
+		max-width: 770px;
 	}
 
-	.main-slider,
-	intro__right {
+	.main-slider {
 		display: none;
 	}
 
@@ -807,15 +839,8 @@ a {
 		display: none;
 	}
 
-	.about__inner {
-		justify-content: center;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-	}
-
 	.rating>.container {
-		width: 100%;
+		max-width: 100%;
 	}
 
 	.contacts__box {
@@ -823,7 +848,7 @@ a {
 	}
 
 	.contacts__form-textarea {
-		width: 260px;
+		max-width: 260px;
 	}
 
 	.contacts__info {
@@ -839,18 +864,39 @@ a {
 }
 
 @media (max-width: 1070px) {
-	.container {
-		width: 770px;
-	}
 
 	.header__top-line-inner {
 		margin-right: -160px;
+	}
+
+	.about__img {
+		display: none;
 	}
 }
 
 @media (max-width: 1024px) {
 	.container {
-		width: 700px;
+		max-width: 770px;
+	}
+
+	.partners__slider-items,
+	.slick-initialized {
+		overflow: hidden;
+		cursor: pointer;
+		padding-bottom: 20px;
+	}
+
+	.about__img {
+		display: none;
+	}
+
+	.about__inner {
+		display: flex;
+		padding-bottom: 100px;
+	}
+
+	.fixed-panel {
+		width: 100px;
 	}
 }
 
@@ -869,7 +915,7 @@ a {
 	}
 
 	.container {
-		width: 700px;
+		max-width: 700px;
 	}
 
 	.header__top-line-inner {
@@ -995,8 +1041,9 @@ a {
 		max-width: 545px;
 	}
 
-	.about__info-img-theatre {
-		display: none;
+	.about-theater-digits {
+		max-width: 300px;
+		margin: 0 0 0 15px;
 	}
 
 	.menu__item-button:hover {
@@ -1073,6 +1120,51 @@ a {
 		padding-top: 80px;
 	}
 
+	.about__title {
+		text-align: center;
+		padding: 50px 0;
+	}
+
+	.about__text {
+		text-align: center;
+	}
+
+	.about__title-colm {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.about__inner {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about-theater-digits {
+		margin-left: 0;
+		max-width: 510px;
+	}
+
+	.about-theater-container {
+		display: flex;
+	}
+
+	.colm-1 {
+		margin-right: 60px;
+	}
+
+	.about-theater-title {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.about__inner {
+		padding-bottom: 35px;
+	}
+
+	.projects {
+		padding-bottom: 90px;
+	}
+
 }
 
 @media (max-width: 645px) {
@@ -1142,12 +1234,12 @@ a {
 		font-size: 58px;
 	}
 
-	.about__inner {
-		padding: 60px 0;
+	.about__title {
+		padding: 30px 0;
 	}
 
-	.about__title {
-		padding-bottom: 60px;
+	.about__inner {
+		padding-bottom: 35px;
 	}
 
 	.about__title-colm {
@@ -1158,14 +1250,10 @@ a {
 		max-width: 525px;
 	}
 
-	.about__row {
-		flex-wrap: wrap;
+	.colm-1 {
+		margin-right: 40px;
 	}
 
-	.colm {
-		display: flex;
-		gap: 110px;
-	}
 
 	.projects__title {
 		font-size: 38px;
@@ -1185,13 +1273,11 @@ a {
 
 	.contacts__form-descriprion {
 		max-width: 346px;
-
 	}
 
 	.contacts__form-textarea {
 		width: 509px;
 	}
-
 
 	.form__inputs {
 		display: flex;
@@ -1212,21 +1298,27 @@ a {
 		margin-bottom: 20px;
 	}
 
-	.colm-2 {
-		display: flex;
-	}
-
-	.colm {
-		display: flex;
-		gap: 95px;
-		/* flex-direction: column */
-	}
 
 	.about__text {
 		max-width: 400px;
 		text-align: center;
 		margin-left: 40px;
 	}
+
+	.about__inner {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about-theater-digits {
+		margin-left: 0;
+		max-width: 510px;
+	}
+
+	.about-theater-container {
+		display: flex;
+	}
+
 
 }
 
@@ -1356,6 +1448,31 @@ a {
 		display: flex;
 		margin-left: 80px;
 	}
+
+	.about__inner {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about-theater-digits {
+		margin-left: 0;
+		max-width: 510px;
+	}
+
+	.about-theater-container {
+		display: flex;
+	}
+
+	.about__text {
+		text-align: center;
+		font-size: 9px;
+		margin: 0 auto;
+	}
+
+	.about__description {
+		font-size: 10px;
+	}
+
 }
 
 @media (max-width: 415px) {
@@ -1465,19 +1582,48 @@ a {
 	}
 
 	.about__inner {
-		padding: 60px 0;
+		padding-top: 20px;
+		padding-bottom: 30px;
 	}
 
-	.about__row {
-		max-width: 400px;
-	}
-
-	.colm-2 {
-		display: flex;
-		flex-wrap: wrap;
+	.about__title {
 		text-align: center;
+		padding: 18px 0;
 	}
 
+	.about__title-colm {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.about-theater-digits {
+		margin-left: 0;
+		max-width: 510px;
+	}
+
+	.about-theater-container {
+		display: flex;
+	}
+
+	.about-theater-title {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.about__title-colm {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.about__text {
+		text-align: center;
+		font-size: 9px;
+		margin: 0 auto;
+	}
+
+	.about__description {
+		font-size: 10px;
+	}
 
 	.rating__box {
 		flex-direction: column;
@@ -1549,13 +1695,24 @@ a {
 @media (max-width: 320px) {
 
 	.container {
-		max-width: 300px;
-		margin: 0;
+		padding: 0 20px;
+
 	}
 
 	.about__inner {
-		padding-top: 55px;
-		padding-bottom: 45px;
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+
+	.about__title-colm {
+		text-align: center;
+		font-size: 15px;
+	}
+
+	.about__text {
+		text-align: center;
+		font-size: 9px;
+		margin: 0 auto;
 	}
 
 	.rating>.container {
@@ -1575,24 +1732,8 @@ a {
 		max-width: 200px;
 	}
 
-	.about__row {
-		max-width: 260px;
-	}
-
 	.small {
 		display: none;
-	}
-
-	.colm {
-		display: flex;
-		gap: 10px;
-		flex-direction: column;
-	}
-
-	.colm-2 {
-		display: flex;
-		flex-wrap: wrap;
-		text-align: center;
 	}
 
 	.rating__box {
