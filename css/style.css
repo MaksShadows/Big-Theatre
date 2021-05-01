@@ -500,6 +500,9 @@ a {
 	color: #ffffff;
 }
 
+.projects__slider {
+	display: none;
+}
 
 /* .projects-slider,
 .slick-initialized {
@@ -948,6 +951,15 @@ a {
 }
 
 @media (max-width: 991px) {
+
+	.projects__slider {
+		display: block;
+	}
+
+	.projects__item {
+		display: none;
+	}
+
 	.header {
 		height: 800px;
 	}
@@ -1102,6 +1114,13 @@ a {
 		cursor: pointer;
 		max-width: 690px;
 		margin-left: 150px;
+	}
+
+	.partners__slider-items,
+	.slick-initialized {
+		cursor: pointer;
+		max-width: 690px;
+		margin: 0 auto;
 	}
 
 	.column {

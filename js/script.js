@@ -27,6 +27,15 @@ $(function () {
         }
       },
       {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          // variableWidth: true,
+          centerMode: true,
+          //infinite: true,
+        }
+      },
+      {
         breakpoint: 580,
         settings: {
           slidesToShow: 1,
