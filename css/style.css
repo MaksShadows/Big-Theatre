@@ -514,36 +514,42 @@ a {
 
 /* === RAITING ====*/
 
-.rating__inner {
-	padding-top: 150px 0;
+.rating__container {
+	max-width: 1170px;
+	padding: 0 30px;
+	margin: 0 auto;
+
 }
 
 .rating__box {
-	height: 550px;
+	padding: 126px 110px 126px 190px;
+	background: url('../img/theater_bg.png') center center/cover no-repeat;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	background-size: cover;
-	background-image: url('../img/theater_bg.png');
 }
 
 .rating__box-left-column {
-	padding-right: 105px;
-}
-
-.rating__box-year {
-	color: #D1A954;
-	font-family: "Open Sans Condensed", sans-serif;
-	font-style: normal;
-	font-weight: bold;
+	font-family: "Open Sans Condensed",
+		sans-serif;
+	font-weight: 700;
 	font-size: 72px;
-	line-height: 98px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	color: #D1A954;
+}
+
+.rating__box-year:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.rating__box-right-column {
+	flex: 0 0 540px;
 }
 
 .rating__box-stars {
 	display: flex;
+	align-items: center;
 	padding-bottom: 25px;
 }
 
@@ -554,7 +560,7 @@ a {
 .rating__box-descriprion {
 	font-family: "Open Sans", sans-serif;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 36px;
 	line-height: 54px;
 	max-width: 375px;
@@ -766,10 +772,6 @@ a {
 		display: none;
 	}
 
-	.rating>.container {
-		width: 100%;
-	}
-
 	.contacts__box {
 		flex-direction: column-reverse;
 	}
@@ -787,6 +789,20 @@ a {
 
 	.contacts-adresses {
 		text-align: right;
+	}
+
+	.rating__box-descriprion {
+		font-size: 34px;
+	}
+
+	.rating__container {
+		max-width: 992px;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.rating__box-right-column {
+		flex: 0 0 450px;
 	}
 }
 
@@ -865,9 +881,6 @@ a {
 		display: none;
 	}
 
-	.rating>.container {
-		max-width: 100%;
-	}
 
 	.contacts__box {
 		flex-direction: column-reverse;
@@ -948,6 +961,11 @@ a {
 	.contacts__info {
 		padding: 25px;
 	}
+
+	.project__items:first-child {
+		margin-left: 90px;
+	}
+
 }
 
 @media (max-width: 991px) {
@@ -1109,6 +1127,23 @@ a {
 		background-color: #0f0f0f;
 	}
 
+	.rating__box-descripriont {
+		font-size: 29px;
+	}
+
+	.rating__box {
+		padding: 126px 100px;
+		justify-content: center;
+	}
+
+	.rating__box-right-column {
+		flex: 0 0 388px;
+	}
+
+	.rating__box-left-column {
+		margin-right: 40px;
+	}
+
 	.projects-slider,
 	.slick-initialized {
 		cursor: pointer;
@@ -1126,10 +1161,6 @@ a {
 	.column {
 		margin-left: 30px;
 
-	}
-
-	.rating>.container {
-		width: 100%;
 	}
 
 	.contacts__box {
@@ -1160,14 +1191,6 @@ a {
 		cursor: pointer;
 		margin: 0 40px;
 		padding-bottom: 20px;
-	}
-
-	.rating__box-descriprion {
-		font-size: 31px;
-	}
-
-	.rating__box-year {
-		margin-bottom: 20px;
 	}
 
 	.partners__title {
@@ -1231,6 +1254,18 @@ a {
 		padding-bottom: 90px;
 	}
 
+	.rating__box-descripriont {
+		font-size: 25px;
+	}
+
+	.rating__box {
+		padding: 126px 33px;
+	}
+
+	.rating__box-right-column {
+		flex: 0 0 330px;
+	}
+
 }
 
 @media (max-width: 693px) {
@@ -1272,28 +1307,6 @@ a {
 		width: 500px;
 	}
 
-	.rating>.container {
-		width: 100%;
-	}
-
-	.rating__box-left-column {
-		padding-right: 60px;
-		margin-left: 40px;
-	}
-
-	.rating__box-descriprion {
-		font-size: 22px;
-	}
-
-
-	.rating__box-year {
-		margin-bottom: 20px;
-	}
-
-	.rating__box-star {
-		padding-bottom: 10px;
-	}
-
 	.intro__title {
 		width: 100%;
 		font-size: 58px;
@@ -1322,6 +1335,23 @@ a {
 
 	.projects__title {
 		font-size: 38px;
+	}
+
+	.rating__box {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.rating__box-left-column {
+		margin-bottom: 30px;
+	}
+
+	.rating__box-stars {
+		justify-content: center;
+	}
+
+	.rating__box-right-column {
+		flex: none;
 	}
 
 	.contacts__title {
@@ -1407,10 +1437,6 @@ a {
 		max-width: 400px;
 	}
 
-	.rating>.container {
-		width: 100%;
-	}
-
 	.contacts__form-textarea {
 		width: 90%;
 	}
@@ -1438,14 +1464,6 @@ a {
 		margin-left: 115px;
 	}
 
-	.rating__box {
-		flex-direction: column;
-		background: none;
-	}
-
-	.rating__box-descriprion {
-		font-size: 14px;
-	}
 }
 
 
@@ -1454,10 +1472,6 @@ a {
 
 	.container {
 		width: 400px;
-	}
-
-	.rating>.container {
-		width: 100%;
 	}
 
 	.intro__left {
@@ -1469,17 +1483,10 @@ a {
 		font-size: 47px;
 	}
 
-	.about__row {
-		max-width: 400px;
+	.rating__box {
+		background: none;
 	}
 
-	.rating>.container {
-		width: 100%;
-	}
-
-	.rating__box-left-column {
-		padding-right: 25px;
-	}
 
 	.contacts__form-textarea {
 		width: 90%;
@@ -1546,10 +1553,6 @@ a {
 		max-width: 300px;
 	}
 
-	.rating>.container {
-		width: 100%;
-	}
-
 	.intro__left {
 		max-width: 300px;
 	}
@@ -1557,19 +1560,6 @@ a {
 	.intro__title {
 		width: 100%;
 		font-size: 47px;
-	}
-
-	.about__row {
-		max-width: 400px;
-	}
-
-
-	.rating__box-left-column {
-		padding-right: 25px;
-	}
-
-	.rating__box {
-		flex-direction: column;
 	}
 
 	.projects__title {
@@ -1633,10 +1623,6 @@ a {
 		display: none;
 	}
 
-	.rating>.container {
-		width: 100%;
-	}
-
 	.intro__left {
 		max-width: 300px;
 	}
@@ -1690,27 +1676,14 @@ a {
 		font-size: 10px;
 	}
 
-	.rating__box {
-		flex-direction: column;
-		background: none;
-	}
-
-	.rating__box-right-column {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		text-align: center;
-
-	}
-
-	.rating__box-descriprion {
-		font-size: 12px;
-	}
-
 	.projects__title {
 		font-size: 40px;
 	}
+
+	.rating__box {
+		background: none;
+	}
+
 
 	.contacts__form-textarea {
 		width: 90%;
@@ -1780,10 +1753,6 @@ a {
 		margin: 0 auto;
 	}
 
-	.rating>.container {
-		width: 100%;
-	}
-
 	.intro__left {
 		max-width: 250px;
 	}
@@ -1801,19 +1770,6 @@ a {
 		display: none;
 	}
 
-	.rating__box {
-		flex-direction: column;
-		background: none;
-	}
-
-	.rating__box-right-column {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		text-align: center;
-	}
-
 	.partners {
 		padding: 0;
 	}
@@ -1822,6 +1778,11 @@ a {
 		font-size: 20px;
 		padding-bottom: 20px;
 	}
+
+	.rating__box {
+		background: none;
+	}
+
 
 	.contacts__form-textarea {
 		width: 90%;
@@ -1870,7 +1831,6 @@ a {
 		padding-top: 45px;
 		padding-bottom: 20px;
 	}
-
 
 	.contacts__form-descriprion {
 		margin: 0;
