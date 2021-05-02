@@ -1,6 +1,5 @@
 $(function () {
 
-
   /* Menu nav toggle */
   $(".menu-burger__header").click((function () {
     $(".menu").toggleClass("open-menu")
@@ -43,15 +42,17 @@ $(function () {
 
         }
       },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          // centerMode: false,
+
+        }
+      },
     ]
   });
 
-  $('.main-slider').slick({
-    arrows: false,
-    dots: false,
-    slidesToShow: 1,
-
-  });
   $('.partners__slider-items').slick({
     arrows: false,
     dots: false,
@@ -138,4 +139,14 @@ $(function () {
     ]
 
   });
+});
+
+let mainSlider = new Swiper('.main-slider', {
+  loop: true,
+  spaceBetween: 40,
+  allowTouchMove: false,
+  navigation: {
+    nextEl: '.main-slider__next',
+    prevEl: '.main-slider__prev',
+  },
 });
