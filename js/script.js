@@ -61,7 +61,7 @@ $(function () {
     responsive: [{
         breakpoint: 1450,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           // variableWidth: true,
           // infinite: true,
 
