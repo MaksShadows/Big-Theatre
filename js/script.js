@@ -12,45 +12,45 @@ $(function () {
     autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-
-    //       variableWidth: true,
+    centerMode: false,
+    variableWidth: false,
     //     infinite: true,
 
-    responsive: [{
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          // variableWidth: true,
-          centerMode: true,
-          //infinite: true,
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-          // variableWidth: true,
-          centerMode: true,
-          //infinite: true,
-        }
-      },
-      {
-        breakpoint: 580,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
+    // responsive: [{
+    //     breakpoint: 1000,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       // variableWidth: true,
+    //       centerMode: true,
+    //       //infinite: true,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 800,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       // variableWidth: true,
+    //       centerMode: true,
+    //       //infinite: true,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 580,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       centerMode: false,
 
-        }
-      },
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-          // centerMode: false,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 400,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       // centerMode: false,
 
-        }
-      },
-    ]
+    //     }
+    //   },
+    // ]
   });
 
   $('.partners__slider-items').slick({
