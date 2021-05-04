@@ -102,7 +102,6 @@ a {
 .footer {
 	display: flex;
 	justify-content: center;
-
 }
 
 .header {
@@ -526,7 +525,6 @@ a {
 	color: #ffffff;
 }
 
-.projects__slider {}
 
 /* .projects-slider,
 .slick-initialized {
@@ -774,24 +772,14 @@ a {
 		margin-left: -115px;
 	}
 
-	.partners__slider-items,
-	.slick-initialized {
-		overflow: hidden;
-		cursor: pointer;
-		margin-left: 0;
-	}
-
 	.menu__list-item {
 		margin-right: 30px;
-	}
-
-	.about__info-img-theatre {
-		display: none;
 	}
 
 	.rating__box-descriprion {
 		font-size: 34px;
 	}
+
 
 	/* .rating__container {
 		max-width: 992px;
@@ -804,9 +792,18 @@ a {
 	}
 }
 
-@media (max-width: 1200px) {
-	.container {
-		max-width: 780px;
+
+@media (max-width: 1300px) {
+
+	.about,
+	.projects,
+	.partners,
+	.contacts {
+		display: block;
+	}
+
+	.header__top-line {
+		display: block;
 	}
 
 	.header__top-line-inner {
@@ -814,32 +811,41 @@ a {
 		align-items: center;
 		padding-top: 50px;
 	}
+}
 
-	.header__phone {
-		padding-top: 50px;
-		margin-left: -115px;
+@media (max-width: 1250px) {
+
+	.header__top-line,
+	.about,
+	.projects,
+	.partners,
+	.contacts {
+		display: block;
 	}
 
-	.menu__list-item {
-		margin-right: 30px;
+	.contacts__inner {
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 1249px) {
+
+	.main-slider {
+		overflow: hidden;
+		margin-left: 110px;
 	}
 
-	.about__info-img-theatre {
-		display: none;
-	}
-
-	.rating>.container {
-		width: 100%;
+	.about-theater-digits {
+		max-width: 255px;
+		margin: 0 20px 0 16px;
 	}
 
 }
 
-@media (max-width: 1100px) {
-	.container {
-		max-width: 785px;
-	}
+@media (max-width: 1200px) {
 
-	.main-slider {
+	.main-slider,
+	.about__img {
 		display: none;
 	}
 
@@ -847,6 +853,38 @@ a {
 		justify-content: center;
 	}
 
+	.container {
+		max-width: 1000px;
+	}
+}
+
+
+@media (max-width: 1100px) {
+	.contacts__inner {
+		flex-direction: column-reverse;
+	}
+
+	.contacts__info {
+		padding-right: 0;
+		padding-top: 80px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contacts-adresses {
+		text-align: right;
+	}
+
+	.container {
+		max-width: 880px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		max-width: 770px;
+	}
+
 	.header__top-line-inner {
 		flex-direction: column;
 		align-items: center;
@@ -854,32 +892,7 @@ a {
 	}
 
 	.menu__list-item {
-		margin-right: 30px;
-	}
-
-	.about__info-img-theatre {
-		display: none;
-	}
-
-	.contacts-adresses {
-		text-align: right;
-	}
-}
-
-@media (max-width: 1070px) {
-
-	.header__top-line-inner {
-		margin-right: -160px;
-	}
-
-	.about__img {
-		display: none;
-	}
-}
-
-@media (max-width: 1024px) {
-	.container {
-		max-width: 770px;
+		margin-right: 19px;
 	}
 
 	.about__title {
@@ -893,9 +906,6 @@ a {
 		padding-bottom: 20px;
 	}
 
-	.about__img {
-		display: none;
-	}
 
 	.about__inner {
 		display: flex;
@@ -903,7 +913,7 @@ a {
 	}
 
 	.fixed-panel {
-		width: 100px;
+		display: none;
 	}
 
 	.projects {
@@ -926,6 +936,10 @@ a {
 		margin-left: 90px;
 	}
 
+	.rating__container {
+		padding: 0;
+	}
+
 	.contacts__inner {
 		flex-direction: column-reverse;
 	}
@@ -937,13 +951,28 @@ a {
 		justify-content: space-between;
 	}
 
-	.contacts-adresses {
+	.contacts__email {
 		text-align: right;
 	}
 
 }
 
 @media (max-width: 991px) {
+
+	.header__top-line,
+	.about,
+	.projects,
+	.partners,
+	.contacts,
+	.footer {
+		display: flex;
+		justify-content: center;
+	}
+
+	.header__top-line {
+		padding-top: 20px;
+	}
+
 
 	.projects__slider {
 		display: block;
@@ -960,6 +989,8 @@ a {
 
 	.header__phone {
 		padding: 0;
+		margin-right: 15px;
+
 	}
 
 	.inrto__inner {
@@ -974,10 +1005,6 @@ a {
 	.header__top-line-inner {
 		flex-direction: row;
 		margin: 0;
-	}
-
-	.fixed-panel {
-		display: none;
 	}
 
 	.main-slider {
@@ -1131,7 +1158,6 @@ a {
 
 	.column {
 		margin-left: 30px;
-
 	}
 }
 
@@ -1219,11 +1245,38 @@ a {
 
 }
 
-@media (max-width: 693px) {
+@media (max-width: 650px) {
 	.container {
 		margin: 0;
 	}
 
+	.form-contacts__form {
+		display: block;
+	}
+
+	.form__inputs {
+		width: 100%;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+
+	.contacts__form-textarea {
+		width: 100%;
+		height: 100px;
+	}
+
+	.contacts__last-line {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		width: 100%;
+		padding-top: 40px;
+	}
+
+	.contacts__form-descriprion {
+		text-align: center;
+	}
 }
 
 @media (max-width: 576px) {
@@ -1262,6 +1315,10 @@ a {
 		font-size: 38px;
 	}
 
+	.partners__item {
+		padding: 0 33px;
+	}
+
 	.rating__box {
 		flex-direction: column;
 		text-align: center;
@@ -1279,12 +1336,24 @@ a {
 		flex: none;
 	}
 
+	.rating__container {
+		padding: 0;
+	}
+
+	.rating__box {
+		padding: 50px 0;
+	}
+
+	.rating__box-year:not(:last-child) {
+		margin-bottom: 0;
+	}
+
 	.contacts__title {
 		padding-bottom: 60px;
 		font-size: 47px;
 	}
 
-	.form-contacts__form {
+	/* .form-contacts__form {
 		display: block;
 	}
 
@@ -1307,8 +1376,8 @@ a {
 	}
 
 	.contacts__form-descriprion {
-		max-width: 346px;
-	}
+		text-align: center;
+	} */
 
 }
 
@@ -1316,66 +1385,10 @@ a {
 
 	.partners__slider-items,
 	.slick-initialized {
-		display: flex;
-		margin-left: 115px;
+		cursor: pointer;
+		margin-left: 85px;
 	}
-
-	.partners__title {
-		margin-bottom: 20px;
-	}
-
-
-	.about__text {
-		max-width: 400px;
-		text-align: center;
-		margin-left: 40px;
-	}
-
-	.about__inner {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.about-theater-digits {
-		margin-left: 0;
-		max-width: 510px;
-	}
-
-	.about-theater-container {
-		display: flex;
-	}
-
-
 }
-
-@media (max-width: 500px) {
-
-	.header__top-line-inner {
-		margin: 0 25px;
-
-	}
-
-	.intro__left {
-		max-width: 400px;
-	}
-
-	.intro__title {
-		width: 100%;
-		font-size: 47px;
-	}
-
-	.footer__inner {
-		justify-content: space-around;
-	}
-
-	.partners__slider-items,
-	.slick-initialized {
-		display: flex;
-		margin-left: 115px;
-	}
-
-}
-
 
 @media (max-width: 430px) {
 
@@ -1453,20 +1466,16 @@ a {
 		margin: 0 auto;
 	}
 
-	.rating__container {
-		padding: 0;
-	}
-
-	.rating__box {
-		padding: 50px 0;
-	}
-
-	.rating__box-year:not(:last-child) {
-		margin-bottom: 0;
+	.rating__box-descriprion {
+		font-size: 20px;
 	}
 
 	.partners__slider-items {
 		margin-left: 60px;
+	}
+
+	.contacts__email {
+		text-align: center;
 	}
 
 }
@@ -1560,6 +1569,10 @@ a {
 	.partners {
 		padding-top: 20px;
 	}
+
+	.partners__slider-items {
+		margin-left: 40px;
+	}
 }
 
 @media (max-width: 320px) {
@@ -1570,7 +1583,7 @@ a {
 	}
 
 	.partners__slider-items {
-		margin-left: 30px;
+		margin-left: 5px;
 	}
 
 	.about__inner {
