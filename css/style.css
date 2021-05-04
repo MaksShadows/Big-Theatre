@@ -667,7 +667,6 @@ a {
 
 .contacts-address {
 	padding-bottom: 25px;
-	text-align: left;
 	white-space: nowrap;
 	text-transform: uppercase;
 	color: #fff;
@@ -794,11 +793,11 @@ a {
 		font-size: 34px;
 	}
 
-	.rating__container {
+	/* .rating__container {
 		max-width: 992px;
 		padding: 0;
 		margin: 0 auto;
-	}
+	} */
 
 	.rating__box-right-column {
 		flex: 0 0 450px;
@@ -1393,6 +1392,22 @@ a {
 		font-size: 47px;
 	}
 
+	.contacts__form-descriprion {
+		margin: 0;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.contacts__info {
+		display: block;
+		text-align: center;
+	}
+
+	.contacts__title {
+		padding-bottom: 15px;
+		font-size: 47px;
+	}
+
 	.footer__inner {
 		flex-direction: column;
 		gap: 15px;
@@ -1438,40 +1453,20 @@ a {
 		margin: 0 auto;
 	}
 
+	.rating__container {
+		padding: 0;
+	}
+
+	.rating__box {
+		padding: 50px 0;
+	}
+
+	.rating__box-year:not(:last-child) {
+		margin-bottom: 0;
+	}
+
 	.partners__slider-items {
 		margin-left: 60px;
-	}
-
-}
-
-@media (max-width: 415px) {
-
-	.container {
-		margin: 0;
-	}
-
-	.intro__left {
-		max-width: 300px;
-	}
-
-	.intro__title {
-		width: 100%;
-		font-size: 47px;
-	}
-
-	.projects__title {
-		font-size: 40px;
-	}
-
-	.contacts__title {
-		padding-bottom: 60px;
-		font-size: 36px;
-	}
-
-
-	.contacts__form-descriprion {
-		margin: 0;
-		margin-top: 20px;
 	}
 
 }
@@ -1543,34 +1538,23 @@ a {
 		font-size: 40px;
 	}
 
-	.rating__box {
-
-		padding: 0 33px;
-	}
-
-	.partners__slider-items {
-		margin-left: 22px;
-	}
-
-
 	.contacts__title {
-		padding-bottom: 60px;
 		font-size: 36px;
 	}
 
+	.partners__title {
+		font-size: 36px;
+	}
 
 	.contacts__form-descriprion {
 		margin: 0;
 		margin-top: 20px;
+		text-align: center;
 	}
 
 	.contacts__info {
 		display: block;
-	}
-
-
-	.rating__box-left-column {
-		margin: 0 auto;
+		text-align: center;
 	}
 
 	.partners {
@@ -1585,8 +1569,8 @@ a {
 		margin: 0;
 	}
 
-	.rating__box-left-column {
-		margin: 0 auto;
+	.partners__slider-items {
+		margin-left: 30px;
 	}
 
 	.about__inner {
@@ -1627,14 +1611,9 @@ a {
 		padding-bottom: 20px;
 	}
 
-	.rating__box {
-
-		padding: 0 33px;
-	}
-
 	.contacts__title {
-		padding-bottom: 60px;
-		font-size: 36px;
+		padding-bottom: 15px;
+		font-size: 34px;
 	}
 
 	.form__inputs {
@@ -1643,18 +1622,9 @@ a {
 		justify-content: center;
 	}
 
-	.contacts__last-line {
-		width: 70%;
-	}
-
 	.contacts__inner {
 		padding-top: 45px;
 		padding-bottom: 20px;
-	}
-
-	.contacts__form-descriprion {
-		margin: 0;
-		margin-top: 20px;
 	}
 
 }
