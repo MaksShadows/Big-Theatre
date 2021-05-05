@@ -1426,6 +1426,7 @@ a {
 	.contacts__info {
 		display: block;
 		text-align: center;
+		padding-top: 40px;
 	}
 
 	.title {
@@ -1567,6 +1568,16 @@ a {
 	.partners__slider-items {
 		padding: 0 65px;
 	}
+
+	/* .form__inputs {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.form__input-item {
+		width: 100%;
+	} */
 }
 
 @media (max-width: 320px) {
@@ -1587,12 +1598,6 @@ a {
 
 	.intro__title {
 		font-size: 25px;
-	}
-
-	.form__inputs {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 	}
 
 	.contacts__inner {
