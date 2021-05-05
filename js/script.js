@@ -16,41 +16,41 @@ $(function () {
     variableWidth: false,
     //     infinite: true,
 
-    // responsive: [{
-    //     breakpoint: 1000,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       // variableWidth: true,
-    //       centerMode: true,
-    //       //infinite: true,
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 800,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       // variableWidth: true,
-    //       centerMode: true,
-    //       //infinite: true,
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 580,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       centerMode: false,
+    responsive: [{
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          // variableWidth: true,
+          centerMode: true,
+          //infinite: true,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          // variableWidth: true,
+          centerMode: true,
+          //infinite: true,
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
 
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 400,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       // centerMode: false,
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          // centerMode: false,
 
-    //     }
-    //   },
-    // ]
+        }
+      },
+    ]
   });
 
   $('.partners__slider-items').slick({
@@ -77,15 +77,6 @@ $(function () {
         }
       },
       {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-          // variableWidth: true,
-          infinite: true,
-
-        }
-      },
-      {
         breakpoint: 770,
         settings: {
           slidesToShow: 3,
@@ -94,57 +85,26 @@ $(function () {
         }
       },
       {
-        breakpoint: 690,
+        breakpoint: 655,
         settings: {
           slidesToShow: 2,
-          // variableWidth: true,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 580,
-        settings: {
-          slidesToShow: 2,
-          // variableWidth: true,
-        }
-      },
-      {
-        breakpoint: 577,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false,
 
         }
       },
       {
-        breakpoint: 520,
+        breakpoint: 570,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           centerMode: false,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 565,
         settings: {
           slidesToShow: 1,
           centerMode: false,
         }
       },
-      {
-        breakpoint: 416,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
-        }
-      },
-      {
-        breakpoint: 415,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
-        }
-      },
-
     ]
 
   });
