@@ -227,6 +227,9 @@ a {
 	height: 50px;
 }
 
+.head-cont {
+	margin: 0 200px;
+}
 
 .main-slider {
 	overflow: hidden;
