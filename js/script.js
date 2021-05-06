@@ -12,7 +12,7 @@ $(function () {
     autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    swipeToSlide: 0,
+    swipeToSlide: !0,
     centerMode: false,
     variableWidth: false,
     //     infinite: true,
@@ -101,6 +101,16 @@ $(function () {
       },
       {
         breakpoint: 565,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+          infinite: true,
+          variableWidth: true,
+
+        }
+      },
+      {
+        breakpoint: 400,
         settings: {
           slidesToShow: 1,
           centerMode: false,

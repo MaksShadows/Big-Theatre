@@ -1300,22 +1300,26 @@ svg:hover {
 		padding: 0 15px;
 	}
 
-	.rating__box {
+	/* .rating__box {
 		flex-direction: column;
 		text-align: center;
+	} */
+
+	.rating__box-descriprion {
+		font-size: 27px;
 	}
 
 	.rating__box-left-column {
 		margin-bottom: 30px;
 	}
 
-	.rating__box-stars {
+	/* .rating__box-stars {
 		justify-content: center;
-	}
+	} */
 
-	.rating__box-right-column {
+	/* .rating__box-right-column {
 		flex: none;
-	}
+	} */
 
 	.rating__container {
 		padding: 0;
@@ -1356,6 +1360,19 @@ svg:hover {
 	} */
 
 }
+
+@media (max-width: 549px) {
+
+	.rating__box {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.rating__box-stars {
+		justify-content: center;
+	}
+}
+
 
 @media (max-width: 519px) {
 
