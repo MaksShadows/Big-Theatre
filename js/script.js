@@ -95,22 +95,22 @@ $(function () {
       {
         breakpoint: 570,
         settings: {
+          autoplay: true,
           slidesToShow: 2,
           centerMode: false,
         }
       },
-      {
-        breakpoint: 565,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false,
-          infinite: true,
-          variableWidth: true,
+      // {
+      //   breakpoint: 565,
+      //   settings: {
+      //     slidesToShow: 0,
+      //     infinite: true,
+      //     variableWidth: true,
 
-        }
-      },
+      //   }
+      // },
       {
-        breakpoint: 400,
+        breakpoint: 430,
         settings: {
           slidesToShow: 1,
           centerMode: false,
