@@ -11,7 +11,7 @@ $(function () {
     dots: false,
     autoplay: true,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     centerMode: false,
     variableWidth: false,
     //     infinite: true,
