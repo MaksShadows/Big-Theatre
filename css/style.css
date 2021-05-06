@@ -148,6 +148,8 @@ svg:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	padding-top: 50px;
+
 }
 
 .header__phone {
@@ -734,11 +736,6 @@ svg:hover {
 
 @media (max-width: 1450px) {
 
-	.header__phone {
-		padding-top: 50px;
-		margin-left: -115px;
-	}
-
 	.menu__list-item {
 		margin-right: 30px;
 	}
@@ -776,6 +773,10 @@ svg:hover {
 	.header__top-line-inner {
 		flex-direction: column;
 		align-items: center;
+		padding-top: 50px;
+	}
+
+	.header__phone {
 		padding-top: 50px;
 	}
 }
