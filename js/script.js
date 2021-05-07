@@ -101,16 +101,16 @@ $(function () {
           centerMode: false,
         }
       },
-      {
-        breakpoint: 569,
-        settings: {
-          autoplay: true,
-          slidesToShow: 1,
-          // infinite: true,
-          variableWidth: true,
-          centerMode: false,
-        }
-      },
+      // {
+      //   breakpoint: 569,
+      //   settings: {
+      //     autoplay: true,
+      //     slidesToShow: 1,
+      //     // infinite: true,
+      //     variableWidth: true,
+      //     centerMode: false,
+      //   }
+      // },
       // {
       //   breakpoint: 499,
       //   settings: {
