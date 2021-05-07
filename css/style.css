@@ -197,6 +197,7 @@ svg:hover {
 	height: 960px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .intro__left {
@@ -231,13 +232,13 @@ svg:hover {
 	height: 50px;
 }
 
-.head-cont {
+/* .head-cont {
 	margin: 0 200px;
-}
+} */
 
 .main-slider {
 	overflow: hidden;
-	margin-left: 150px;
+	margin-left: 130px;
 }
 
 .main-slider__inner {
@@ -784,9 +785,10 @@ svg:hover {
 		padding-top: 50px;
 	}
 
+	/*
 	.head-cont {
 		margin: 0 auto;
-	}
+	} */
 
 	.contacts {
 		margin-top: 75px;
@@ -794,6 +796,15 @@ svg:hover {
 
 	.cont-title {
 		padding-bottom: 70px;
+	}
+
+	/* .inrto__inner {
+		justify-content: flex-end;
+	} */
+
+	.main-slider {
+		overflow: hidden;
+		margin-left: 100px;
 	}
 }
 
@@ -814,16 +825,19 @@ svg:hover {
 
 @media (max-width: 1249px) {
 
-	.main-slider {
-		overflow: hidden;
-		margin-left: 110px;
-	}
-
 	.about-theater-digits {
 		max-width: 255px;
 		margin: 0 20px 0 16px;
 	}
 
+	.container {
+		max-width: 1030px;
+	}
+
+	.main-slider {
+		overflow: hidden;
+		margin-left: 84px;
+	}
 }
 
 @media (max-width: 1200px) {
