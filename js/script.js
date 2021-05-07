@@ -96,7 +96,7 @@ $(function () {
         breakpoint: 570,
         settings: {
           autoplay: true,
-          speed: 500,
+          speed: 1000,
           slidesToShow: 2,
           centerMode: false,
         }
