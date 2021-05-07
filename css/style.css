@@ -1374,10 +1374,10 @@ svg:hover {
 		justify-content: center;
 	}
 
-	/* .part__cont {
+	.part__cont {
 		padding-right: 25px;
 
-	} */
+	}
 }
 
 
@@ -1387,19 +1387,18 @@ svg:hover {
 		padding: 0;
 	}
 
-	/* .part__cont {
+	.part__cont {
 		padding-right: 15px;
-	} */
+	}
 }
 
 
 
-/* @media (max-width: 495px) {
+@media (max-width: 495px) {
 	.part__cont {
 		padding: 0;
-
 	}
-} */
+}
 
 @media (max-width: 430px) {
 

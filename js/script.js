@@ -90,35 +90,33 @@ $(function () {
         settings: {
           slidesToShow: 2,
           autoplay: true,
-
         }
       },
       {
         breakpoint: 570,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 569,
+        settings: {
+          autoplay: true,
+          slidesToShow: 1,
+          // infinite: true,
+          variableWidth: true,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 499,
         settings: {
           autoplay: true,
           slidesToShow: 2,
           centerMode: false,
         }
       },
-      // {
-      //   breakpoint: 569,
-      //   settings: {
-      //     autoplay: true,
-      //     slidesToShow: 1,
-      //     // infinite: true,
-      //     variableWidth: true,
-      //     centerMode: false,
-      //   }
-      // },
-      // {
-      //   breakpoint: 499,
-      //   settings: {
-      //     autoplay: true,
-      //     slidesToShow: 2,
-      //     centerMode: false,
-      //   }
-      // },
       {
         breakpoint: 455,
         settings: {
