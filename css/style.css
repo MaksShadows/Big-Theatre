@@ -130,6 +130,7 @@ svg:hover {
 }
 
 .header__top-line,
+.header__main,
 .about,
 .partners,
 .contacts,
@@ -765,6 +766,7 @@ svg:hover {
 @media (max-width: 1300px) {
 
 	.about,
+	.header__main,
 	.projects,
 	.partners,
 	.contacts {
