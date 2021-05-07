@@ -617,6 +617,10 @@ svg:hover {
 
 /* === CONTACTS ===*/
 
+.contacts {
+	margin-top: 100px;
+}
+
 
 .contacts__inner {
 	display: flex;
@@ -782,6 +786,14 @@ svg:hover {
 
 	.head-cont {
 		margin: 0 auto;
+	}
+
+	.contacts {
+		margin-top: 75px;
+	}
+
+	.cont-title {
+		padding-bottom: 70px;
 	}
 }
 
