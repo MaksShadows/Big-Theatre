@@ -101,17 +101,18 @@ $(function () {
         }
       },
       // {
-      //   breakpoint: 565,
+      //   breakpoint: 569,
       //   settings: {
-      //     slidesToShow: 0,
-      //     infinite: true,
+      //     slidesToShow: 1,
+      //     // infinite: true,
       //     variableWidth: true,
-
+      //     centerMode: false,
       //   }
       // },
       {
         breakpoint: 430,
         settings: {
+          autoplay: true,
           slidesToShow: 1,
           centerMode: false,
         }
