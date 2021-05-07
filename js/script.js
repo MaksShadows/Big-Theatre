@@ -89,6 +89,7 @@ $(function () {
         breakpoint: 690,
         settings: {
           slidesToShow: 2,
+          autoplay: true,
 
         }
       },
@@ -100,17 +101,26 @@ $(function () {
           centerMode: false,
         }
       },
+      {
+        breakpoint: 569,
+        settings: {
+          autoplay: true,
+          slidesToShow: 1,
+          // infinite: true,
+          variableWidth: true,
+          centerMode: false,
+        }
+      },
       // {
-      //   breakpoint: 569,
+      //   breakpoint: 499,
       //   settings: {
-      //     slidesToShow: 1,
-      //     // infinite: true,
-      //     variableWidth: true,
+      //     autoplay: true,
+      //     slidesToShow: 2,
       //     centerMode: false,
       //   }
       // },
       {
-        breakpoint: 430,
+        breakpoint: 455,
         settings: {
           autoplay: true,
           slidesToShow: 1,

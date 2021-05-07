@@ -1262,18 +1262,6 @@ svg:hover {
 }
 
 
-@media (max-width: 654px) {
-
-	/* .partners__item,
-	.slick-slide {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 355px;
-	} */
-}
-
-
 @media (max-width: 576px) {
 
 	.container {
@@ -1338,6 +1326,10 @@ svg:hover {
 		margin-bottom: 0;
 	}
 
+	.part__slid {
+		padding-top: 30px;
+	}
+
 	/* .form-contacts__form {
 		display: block;
 	}
@@ -1381,6 +1373,11 @@ svg:hover {
 	.rating__box-stars {
 		justify-content: center;
 	}
+
+	/* .part__cont {
+		padding-right: 25px;
+
+	} */
 }
 
 
@@ -1389,12 +1386,18 @@ svg:hover {
 	.projects__slider {
 		padding: 0;
 	}
+
+	/* .part__cont {
+		padding-right: 15px;
+	} */
 }
 
-/* @media (max-width: 569px) {
 
-	.partners__slider-items {
-		padding: 8px 10px;
+
+/* @media (max-width: 495px) {
+	.part__cont {
+		padding: 0;
+
 	}
 } */
 
