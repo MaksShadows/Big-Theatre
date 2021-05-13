@@ -10,7 +10,7 @@ $(function () {
     arrows: false,
     dots: false,
     autoplay: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     swipeToSlide: !0,
     centerMode: false,
@@ -18,7 +18,16 @@ $(function () {
     //     infinite: true,
 
     responsive: [{
-        breakpoint: 1000,
+        breakpoint: 1305,
+        settings: {
+          slidesToShow: 2,
+          // variableWidth: true,
+          centerMode: true,
+          //infinite: true,
+        }
+      },
+      {
+        breakpoint: 1030,
         settings: {
           slidesToShow: 2,
           // variableWidth: true,
