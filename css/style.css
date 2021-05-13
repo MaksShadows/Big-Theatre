@@ -850,7 +850,11 @@ svg:hover {
 	}
 
 	.inrto__inner {
-		justify-content: center;
+		justify-content: flex-start;
+	}
+
+	.header__main {
+		display: flex;
 	}
 
 	.container {
@@ -987,6 +991,10 @@ svg:hover {
 		justify-content: center;
 	}
 
+	.projects__slider {
+		padding: 0 25px;
+	}
+
 	.container {
 		margin: 0;
 	}
@@ -1064,6 +1072,8 @@ svg:hover {
 	}
 
 	.menu__list-link {
+		font-family: "Open Sans Condensed",
+			sans-serif;
 		font-size: 24px;
 	}
 
@@ -1096,7 +1106,7 @@ svg:hover {
 
 	.social-nav {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
 		flex-wrap: wrap;
 		padding-top: 40px;
 	}
@@ -1105,7 +1115,6 @@ svg:hover {
 		flex-basis: 34%;
 		margin-top: 20px;
 		margin-bottom: 50px;
-		margin-left: 35px;
 	}
 
 	.intro__left {
@@ -1393,13 +1402,29 @@ svg:hover {
 @media (max-width: 549px) {
 
 	.rating__box {
-		flex-direction: column;
 		text-align: center;
 		padding-bottom: 0px;
 	}
 
+	.rating__box-descriprion {
+		font-size: 21px;
+	}
+
 	.rating__box-stars {
 		justify-content: center;
+		padding-bottom: 10px;
+	}
+
+	.rating__box-left-column {
+		margin-right: 0;
+	}
+
+	.rating__box-left-column {
+		font-size: 50px;
+	}
+
+	.rating__box-descriprion {
+		font-size: 18px;
 	}
 
 	/* .part__cont {
@@ -1413,6 +1438,33 @@ svg:hover {
 
 	.projects__slider {
 		padding: 0;
+	}
+
+	.rating__box-descriprion {
+		font-size: 16px;
+	}
+
+	.projects__slider {
+		padding: 0 15px;
+	}
+
+	/* .part__cont {
+		padding-right: 15px;
+	} */
+}
+
+@media (max-width: 470px) {
+
+	.rating__box-descriprion {
+		font-size: 16px;
+	}
+
+	.rating__box-left-column {
+		font-size: 45px;
+	}
+
+	.rating__box-right-column {
+		flex: 0 0 300px;
 	}
 
 	/* .part__cont {
@@ -1485,12 +1537,12 @@ svg:hover {
 		font-size: 10px;
 	}
 
-	.rating__box-left-column {
-		margin: 0 auto;
+	.rating__box-descriprion {
+		font-size: 16px;
 	}
 
-	.rating__box-descriprion {
-		font-size: 20px;
+	.rating__box-right-column {
+		flex: 0 0 270px;
 	}
 
 	.contacts__email {
@@ -1598,6 +1650,26 @@ svg:hover {
 		padding-bottom: 40px;
 	}
 
+	.rating__box-star {
+		padding-right: 10px;
+	}
+
+	.rating__box-right-column {
+		flex: 0 0 190px;
+	}
+
+	.rating__box-descriprion {
+		font-size: 12px;
+	}
+
+	.rating__box-left-column {
+		font-size: 40px;
+	}
+
+	.rating__box-left-column {
+		margin-right: 15px;
+	}
+
 	/* .form__inputs {
 		display: flex;
 		flex-direction: column;
@@ -1644,7 +1716,7 @@ svg:hover {
 	}
 
 	.rating__box-descriprion {
-		font-size: 17px;
+		font-size: 12px;
 	}
 
 }
