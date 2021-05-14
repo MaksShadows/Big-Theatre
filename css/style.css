@@ -1119,8 +1119,13 @@ svg:hover {
 	.social__link {
 		flex-basis: 34%;
 		margin-top: 20px;
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 	}
+
+	.svg__icon {
+		margin-left: -15px;
+	}
+
 
 	.intro__left {
 		max-width: 545px;
