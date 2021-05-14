@@ -702,7 +702,7 @@ svg:hover {
 	padding-left: 15px;
 	font-family: "Open Sans";
 	font-weight: 400;
-        outline:none;
+	outline: none;
 }
 
 .contacts__last-line {
@@ -857,6 +857,8 @@ svg:hover {
 
 	.inrto__inner {
 		justify-content: flex-start;
+		padding: 0 65px;
+
 	}
 
 	.header__main {
@@ -888,12 +890,21 @@ svg:hover {
 	.container {
 		max-width: 880px;
 	}
+
+	.inrto__inner {
+		padding: 0px 50px;
+	}
 }
 
 @media (max-width: 1024px) {
 	.container {
 		max-width: 770px;
 	}
+
+	.inrto__inner {
+		padding: 0;
+	}
+
 
 	.header__top-line-inner {
 		flex-direction: column;
