@@ -702,6 +702,7 @@ svg:hover {
 	padding-left: 15px;
 	font-family: "Open Sans";
 	font-weight: 400;
+        outline:none;
 }
 
 .contacts__last-line {
