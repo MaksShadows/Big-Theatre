@@ -29,34 +29,26 @@ $(function () {
       {
         breakpoint: 1030,
         settings: {
-          slidesToShow: 2,
-          // variableWidth: true,
-          centerMode: true,
-          //infinite: true,
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-          // variableWidth: true,
-          centerMode: true,
-          //infinite: true,
-        }
-      },
-      {
-        breakpoint: 580,
-        settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.5,
+          // variableWidth: false,
           centerMode: false,
-
+          //  infinite: true,
         }
       },
       {
-        breakpoint: 450,
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1.5,
+          // variableWidth: true,
+          centerMode: false,
+          //infinite: true,
+        }
+      },
+      {
+        breakpoint: 555,
         settings: {
           slidesToShow: 1,
-          // centerMode: false,
+          centerMode: false,
 
         }
       },
