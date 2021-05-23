@@ -29,14 +29,14 @@ $(function () {
       {
         breakpoint: 1030,
         settings: {
-          slidesToShow: 1.5,
-          // variableWidth: false,
-          centerMode: false,
-          //  infinite: true,
+          slidesToShow: 2,
+          variableWidth: true,
+          centerMode: true,
+          //infinite: false,
         }
       },
       {
-        breakpoint: 900,
+        breakpoint: 770,
         settings: {
           slidesToShow: 1.5,
           // variableWidth: true,
@@ -45,7 +45,7 @@ $(function () {
         }
       },
       {
-        breakpoint: 555,
+        breakpoint: 520,
         settings: {
           slidesToShow: 1,
           centerMode: false,
