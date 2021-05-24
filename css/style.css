@@ -1416,6 +1416,7 @@ svg:hover {
 	} */
 
 	.contacts {
+		margin: 0 auto;
 		padding-top: 45px;
 	}
 
@@ -1648,6 +1649,15 @@ svg:hover {
 		margin: 0;
 		margin-top: 20px;
 		text-align: center;
+	}
+
+	.contacts {
+		padding-top: 30px;
+	}
+
+	.contacts__inner {
+		padding-top: 45px;
+		padding-bottom: 20px;
 	}
 
 	.contacts__info {
