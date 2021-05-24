@@ -15,7 +15,6 @@ $(function () {
     swipeToSlide: !0,
     centerMode: false,
     variableWidth: false,
-    //     infinite: true,
 
     responsive: [{
         breakpoint: 1305,
@@ -36,16 +35,24 @@ $(function () {
         }
       },
       {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: true,
+          centerMode: false,
+        }
+      },
+      {
         breakpoint: 770,
         settings: {
-          slidesToShow: 1.5,
-          // variableWidth: true,
+          slidesToShow: 1,
+          variableWidth: true,
           centerMode: false,
           //infinite: true,
         }
       },
       {
-        breakpoint: 520,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
           centerMode: false,

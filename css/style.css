@@ -1016,6 +1016,11 @@ svg:hover {
 		margin: 0;
 	}
 
+	.projects__slider {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
 	.header__top-line-inner {
 		flex-direction: row;
 		margin: 0;
@@ -1184,11 +1189,6 @@ svg:hover {
 
 
 @media (max-width: 770px) {
-
-	.projects-slider {
-		cursor: pointer;
-		padding: 0 25px;
-	}
 
 	.partners__slider-items,
 	.slick-initialized {
