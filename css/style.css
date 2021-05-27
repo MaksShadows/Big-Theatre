@@ -69,7 +69,7 @@ textarea,
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #fff;
-	border: 1px solid #E0E0E0;
+	border: none;
 	transition: background 0.3s linear;
 	cursor: pointer;
 }
@@ -449,7 +449,16 @@ svg:hover {
 	flex: 0 0 442px;
 	height: 550px;
 	position: relative;
+	background-position: top;
+	background-size: cover;
+	background-clip: content-box;
 }
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
 
 .projects-slider__item::before {
 	content: "";
@@ -481,8 +490,8 @@ svg:hover {
 }
 
 .projects-slider__img {
-	width: 100%;
-	height: 100%;
+	width: 442px;
+	height: 550px;
 	object-fit: cover;
 	object-position: center;
 }
@@ -867,6 +876,13 @@ svg:hover {
 
 	.container {
 		max-width: 1000px;
+	}
+
+	.projects-slider__img {
+		width: 100%;
+		height: 550px;
+		object-fit: cover;
+		object-position: center;
 	}
 }
 

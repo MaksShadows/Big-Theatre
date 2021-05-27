@@ -12,15 +12,16 @@ $(function () {
     autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    swipeToSlide: !0,
+    swipeToSlide: true,
     centerMode: false,
     variableWidth: false,
 
-    responsive: [{
-        breakpoint: 1305,
+    responsive: [
+      {
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
-          // variableWidth: true,
+          slidesToShow: 3,
+          variableWidth: true,
           centerMode: true,
           //infinite: true,
         }
