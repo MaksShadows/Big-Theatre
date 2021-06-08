@@ -149,4 +149,3 @@ let mainSlider = new Swiper('.main-slider', {
     prevEl: '.main-slider__prev',
   },
 });
-
