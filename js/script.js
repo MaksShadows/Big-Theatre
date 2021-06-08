@@ -16,8 +16,7 @@ $(function () {
     centerMode: false,
     variableWidth: false,
 
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
@@ -68,6 +67,7 @@ $(function () {
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
+    swipeToSlide: true,
     responsive: [{
         breakpoint: 1305,
         settings: {
@@ -81,7 +81,6 @@ $(function () {
         breakpoint: 1025,
         settings: {
           slidesToShow: 3,
-          // variableWidth: true,
           infinite: true,
 
         }
@@ -150,3 +149,4 @@ let mainSlider = new Swiper('.main-slider', {
     prevEl: '.main-slider__prev',
   },
 });
+

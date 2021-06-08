@@ -147,7 +147,6 @@ svg:hover {
 .header__top-line,
 .header__main,
 .about,
-.partners,
 .contacts,
 .footer {
 	display: flex;
@@ -625,6 +624,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-left: 25px;
 }
 
 .slick-initialized .slick-slide {
@@ -830,7 +830,6 @@ img {
 	.header__top-line,
 	.about,
 	.projects,
-	.partners,
 	.contacts {
 		display: block;
 	}
@@ -855,6 +854,8 @@ img {
 		overflow: hidden;
 		margin-left: 84px;
 	}
+
+
 }
 
 @media (max-width: 1200px) {
@@ -1330,7 +1331,7 @@ img {
 		padding: 0 15px;
 	}
 
-	.partners__slider-items {
+	.partners__slider-item {
 		padding: 0 6px;
 	}
 
