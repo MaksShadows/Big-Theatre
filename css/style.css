@@ -484,9 +484,12 @@ svg:hover {
 	opacity: 0;
 }
 
+.projects-slider__img img {
+	width: 100%;
+	height: 100px;
+}
+
 .projects-slider__img {
-	/* width: 100%;
-	height: 100px; */
 	width: 442px;
 	height: 550px;
 	object-fit: cover;
